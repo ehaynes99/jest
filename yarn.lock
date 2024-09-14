@@ -10930,7 +10930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:^3.2.9":
+"flatted@npm:^3.2.9, flatted@npm:^3.3.1":
   version: 3.3.1
   resolution: "flatted@npm:3.3.1"
   checksum: 85ae7181650bb728c221e7644cbc9f4bf28bc556f2fc89bb21266962bdf0ce1029cc7acc44bb646cd469d9baac7c317f64e841c4c4c00516afa97320cdac7f94
@@ -13854,6 +13854,7 @@ __metadata:
     "@types/supports-color": ^8.1.0
     "@types/ungap__structured-clone": ^1.2.0
     "@ungap/structured-clone": ^1.2.0
+    flatted: ^3.3.1
     get-stream: ^6.0.0
     jest-leak-detector: "workspace:*"
     jest-util: "workspace:*"

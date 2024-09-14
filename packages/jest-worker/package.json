@@ -21,6 +21,7 @@
   "dependencies": {
     "@types/node": "*",
     "@ungap/structured-clone": "^1.2.0",
+    "flatted": "^3.3.1",
     "jest-util": "workspace:*",
     "merge-stream": "^2.0.0",
     "supports-color": "^8.0.0"

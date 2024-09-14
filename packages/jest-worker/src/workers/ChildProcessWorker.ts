@@ -7,6 +7,7 @@
 
 import {type ChildProcess, type ForkOptions, fork} from 'child_process';
 import {totalmem} from 'os';
+import * as flatted from 'flatted';
 import mergeStream = require('merge-stream');
 import {stdout as stdoutSupportsColor} from 'supports-color';
 import {
@@ -268,7 +269,7 @@ export default class ChildProcessWorker
         break;
 
       case PARENT_MESSAGE_CLIENT_ERROR:
-        error = response[4];
+        error = flatted.fromJSON(response[4]);
 
         if (error != null && typeof error === 'object') {
           const extra = error;

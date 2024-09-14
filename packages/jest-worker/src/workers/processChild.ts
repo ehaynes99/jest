@@ -6,6 +6,7 @@
  */
 
 import {types} from 'node:util';
+import * as flatted from 'flatted';
 import {isPromise} from 'jest-util';
 import {
   CHILD_MESSAGE_CALL,
@@ -151,7 +152,7 @@ function reportError(error: Error, type: PARENT_MESSAGE_ERROR) {
     error.constructor && error.constructor.name,
     error.message,
     error.stack,
-    typeof error === 'object' ? {...error} : error,
+    typeof error === 'object' ? {...flatted.toJSON(error)} : error,
   ]);
 }
 
